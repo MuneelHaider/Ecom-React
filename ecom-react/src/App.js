@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import products from "./db/data";
@@ -10,8 +9,6 @@ import "./index.css";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-
-  // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
@@ -22,25 +19,19 @@ function App() {
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
-  // ----------- Radio Filtering -----------
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
-  const handleClick = (event) => {
-    setSelectedCategory(event.target.value);
+  const handleClick = (value) => {
+    setSelectedCategory(value);
   };
 
   function filteredData(products, selected, query) {
     let filteredProducts = products;
-
-    // Filtering Input Items
     if (query) {
       filteredProducts = filteredItems;
     }
-
-    // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, color, company, newPrice, title }) =>
@@ -51,7 +42,6 @@ function App() {
           title === selected
       );
     }
-
     return filteredProducts.map(
       ({ img, title, star, reviews, prevPrice, newPrice }) => (
         <Card

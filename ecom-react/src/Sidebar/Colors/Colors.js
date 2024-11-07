@@ -11,7 +11,6 @@ const Colors = ({ handleChange }) => {
           <span className="checkmark all"></span>
           All
         </label>
-
         <Input
           handleChange={handleChange}
           value="black"
@@ -19,7 +18,6 @@ const Colors = ({ handleChange }) => {
           name="test1"
           color="black"
         />
-
         <Input
           handleChange={handleChange}
           value="blue"
@@ -27,7 +25,6 @@ const Colors = ({ handleChange }) => {
           name="test1"
           color="blue"
         />
-
         <Input
           handleChange={handleChange}
           value="red"
@@ -35,7 +32,6 @@ const Colors = ({ handleChange }) => {
           name="test1"
           color="red"
         />
-
         <Input
           handleChange={handleChange}
           value="green"
@@ -43,7 +39,6 @@ const Colors = ({ handleChange }) => {
           name="test1"
           color="green"
         />
-
         <label className="sidebar-label-container">
           <input
             onChange={handleChange}
