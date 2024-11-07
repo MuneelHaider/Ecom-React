@@ -11,12 +11,27 @@
     border: 2px solid #ededed;
     padding: 20px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    min-height: 5rem; 
+}
+
 
 .card-img {
     width: 13rem;
+    height: 13rem; 
+    object-fit: cover; 
     margin-bottom: 1rem;
 }
+
 
 .card-title {
     margin-bottom: 1rem;
@@ -34,9 +49,11 @@
 
 .card-price {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%; 
 }
+
 
 .bag-icon {
     color:cornflowerblue;
