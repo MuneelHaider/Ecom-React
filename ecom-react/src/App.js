@@ -1,9 +1,13 @@
-import Nav from './components/NavBar/Nav'
+import Nav from "./components/Nav/Nav";
+import Recommended from "./components/Recommended/Recommended";
+import Products from "./Products/Products";
 
 function App() {
   return (
     <>
-     <Nav />
+      <Nav />
+      <Products />
+      <Recommended />
     </>
   );
 }
