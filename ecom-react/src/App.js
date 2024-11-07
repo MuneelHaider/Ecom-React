@@ -1,7 +1,9 @@
+import Nav from './components/NavBar/Nav'
+
 function App() {
   return (
     <>
-     <h1>Hello World!</h1> 
+     <Nav />
     </>
   );
 }
