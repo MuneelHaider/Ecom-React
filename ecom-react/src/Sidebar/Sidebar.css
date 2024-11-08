@@ -14,5 +14,12 @@
 }
 
 .logo-container h1 {
-  margin-top: 1.3rem;
+  margin-top: 1.5rem;
+  font-size: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo-container h1:hover{
+  color: darkblue;
+  transform: scale(1.2);
 }
